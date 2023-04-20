@@ -3,12 +3,21 @@
     <head>
         <title>Gaming</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="container-main">
             <div class="container-login">
-                
+                <form name="loginForm" onclick="return validateForm()">
+                    <label for="userName">Name</label><br>
+                    <input type="text" id="userName" class="name"><br>
+                    <label for="userPassword">Password</label><br>
+                    <input type="password" id="userPassword" class="password"><br>
+                </form>
+            </div> 
+            <div class="container-corousel">
+
             </div>
         </div>
     </body>
