@@ -3,13 +3,18 @@
     src: url("DMSans-Regular.ttf");
 }
 
+@font-face {
+    font-family: "anurati";
+    src: url("Anurati-Regular.otf");
+}
+
 body {
     background-image: url("img1.jpg");
     background-size: cover;
     height: 100vh;
     position: relative;
     overflow: hidden;
-    font-family: 'Lato', sans-serif;
+    font-family: 'gamingFont';
 }
 
 body::before {
@@ -24,7 +29,6 @@ body::before {
 }
 
 .container-main {
-    background-color: rgb(131, 37, 72);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -33,18 +37,161 @@ body::before {
 }
 
 .container-login {
-    background-color: aqua;
     width: 45%;
     height: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-left: 1px #fe3150 solid;
+
 }
+
+.container-login-flex {
+
+}
+
+.container-login-heading {
+
+}
+
+.container-login-heading h1 a{
+    font-family: 'anurati', sans-serif;
+    text-decoration: none;
+    letter-spacing: 5px;
+    color: #ece7e1;
+
+}
+
+.container-login-heading h1 a:hover {
+    color: #fe3150;
+}
+
+.container-login-heading h3 {
+    font-family: 'Lato';
+    font-size: 35px;
+    color: #f9f9f9;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+}
+
+.container-login-heading p {
+    margin-top: 15px;
+    font-size: smaller;
+    font-weight: 400;
+    color: #ece7e1;
+}
+
+.container-login-heading p a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: large;
+    font-weight: 600;
+}
+
+.name, .password {
+    width: 130%;
+    padding: 20px 40px;
+    margin: 20px 0px;
+    border: 2px #3f4145 solid;
+    border-radius: 10px;
+    background-color: #2e3034;
+    color: #f9f9f9;
+}
+
+.name:hover, .password:hover {
+    border-color: #ece7e1;  
+}
+
+.name:focus, .password:focus {
+    outline: none;
+    border-color: #3f4145;
+    background-color: #ece7e1;
+    color: #282f37;
+}
+
+.name::placeholder, .password::placeholder {
+    color: #f9f9f9;
+    font-size: small;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.name:focus::placeholder, .password:focus::placeholder {
+    color: #282f37;
+}
+
+.name {
+
+}
+
+.password {
+    margin-top: 0px;
+}
+
+.container-button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.signin {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    color: #f9f9f9;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.login {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    color: #282f37;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.signin:hover {
+    background-color: #fe3150;
+}
+
+.login:hover {
+    background-color: transparent;
+    color: #fe3150;
+}
+
+
+
+
 
 .container-corousel {
-    background-color: aliceblue;
     height: 85%;
     width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
 }
 
+.carousel {
+
+}
+  
+.carousel-inner {
+    overflow: hidden;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+
+
+}
+  
+.carousel-item {
+    flex-shrink: 0;
+    transform: translate3d(0, 0, 0);
+}
+  
+  
